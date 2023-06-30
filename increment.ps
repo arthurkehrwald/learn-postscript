@@ -1,0 +1,12 @@
+%!
+
+/++ {
+    dup % duplicate variable name
+    load 1 add % add 
+    def % redefine variable name (if it wasn't duplicated, it would have been replaced with its value by load)
+} def
+
+/counter 0 def
+/counter ++
+/counter ++
+counter ==
